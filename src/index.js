@@ -23,7 +23,6 @@ root.render(
     <Route path='/AppPricing' element={<AppPricing/>}></Route>
     <Route path='/Activity' element={<Activity/>}></Route>
     <Route path='/Activity1' element={<Activity1/>}></Route>
-    
   </Routes>
   </RecoilRoot>
   </BrowserRouter>
