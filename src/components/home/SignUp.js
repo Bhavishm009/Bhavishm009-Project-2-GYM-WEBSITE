@@ -163,7 +163,7 @@ function SignUp() {
       </form>{" "}
       {show ? (
         <p className="redirection">
-          Now You Can Go To <Link to="/priceing">Home</Link> To Get Subscription
+          Now You Can Go To <Link to="/">Home</Link> To Get Subscription
         </p>
       ) : (
         ""

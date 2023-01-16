@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pricing.css";
+import { Button } from "antd";
 import { useRecoilState } from "recoil";
 import { Data, Data2, Data3 } from "../../components/Atom/Atom";
 import { Link } from "react-router-dom";
@@ -19,7 +20,7 @@ const AppPricing = () => {
         // setShow(true);
         setSub(true);
         setLogin(true);
-        navigate("/activity");
+        navigate("/Activity");
         alert(
           "You have successfully subcribe now you can click to 'subscribed' button to go to activity page"
         );
@@ -43,7 +44,7 @@ const AppPricing = () => {
         alert(
           "You have successfully sub now you can click to subscribed button to go to activity page"
         );
-        navigate("/activity1");
+        navigate("/Activity1");
       } else {
         setSub1(false);
       }
@@ -97,12 +98,12 @@ const AppPricing = () => {
         <div style={{ textAlign: "center" }}>
           {sub ? (
             <Link to="/activity">
-              <button>SUBSCRIBED</button>
+              <Button type="primary" danger>SUBSCRIBED</Button>
             </Link>
           ) : (
-            <button onClick={confirmation} className="DayPassButton">
+            <Button type="primary" danger onClick={confirmation} >
               Subscribe
-            </button>
+            </Button>
           )}
         </div>
       </div>
@@ -150,14 +151,14 @@ const AppPricing = () => {
         </ul>
         <div style={{ textAlign: "center" }}>
           {sub1 ? (
-            <Link to="/activity1">
+            <Link to="/Activity1">
               {" "}
-              <button>SUBSCRIBED</button>
+              <Button type="primary" danger>SUBSCRIBED</Button>
             </Link>
           ) : (
-            <button onClick={confirmationtwo} className="MonthToMonthButton">
+            <Button type="primary" danger onClick={confirmationtwo} >
               Subscribe
-            </button>
+            </Button>
           )}
         </div>
       </div>
